@@ -14,7 +14,7 @@ export default class LatestMovieReviewsContainer extends Component{
     componentDidMount(){
         fetch(URL).then(resp=>resp.json()).then(reviews => this.setState({reviews: reviews.results}))
     }
-    
+
     render() {
         return (
             <div className='latest-movie-reviews'>
